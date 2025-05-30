@@ -2,73 +2,76 @@ Exploratory Data Analysis (EDA)
 
 📌 Project Overview
 This project explores the famous Titanic dataset to uncover patterns and relationships among passenger features and their survival outcomes. It includes data cleaning, visualization, feature relationships, and key statistical insights.
+## 📂 Project Structure
 
-🗂 Dataset
-The dataset used is the train.csv file from the Titanic competition on Kaggle.
+- `train.csv`: The dataset used for EDA
+- `EDA.ipynb`: Jupyter Notebook with all EDA steps
+- `images/`: Folder containing saved PNG plots
+- `README.md`: Project documentation
 
-📊 Key Steps
-Data Cleaning
+## 🔍 Key Objectives
 
-Filled missing values in Age with median and Embarked with mode
+- Understand the structure and quality of the dataset
+- Visualize and analyze relationships between features
+- Identify key factors that influenced survival
 
-Checked for duplicates and dropped them (if any)
+---
 
-Univariate Analysis
+## 📊 EDA Insights Summary
 
-Survival count
+1. **Survival Rate:**
+   - Majority of passengers did **not survive**. Around 62% perished while 38% survived.
 
-Class distribution
+2. **Survival by Sex:**
+   - **Females had a higher survival rate** than males, indicating possible prioritization during evacuation.
 
-Age and Fare distributions
+3. **Age Distribution:**
+   - Most passengers were aged between **20–30 years**.
+   - Age follows a right-skewed distribution with a few older passengers up to age 80+.
 
-Bivariate Analysis
+4. **Age vs Survival:**
+   - Survivors were slightly younger on average, but age alone wasn’t a strong survival indicator.
 
-Survival by Sex
+5. **Passenger Class Count:**
+   - The **3rd class** had the highest number of passengers, followed by 1st and 2nd.
 
-Age distribution vs Survival
+6. **Fare Distribution per Class:**
+   - Passengers in **1st class paid significantly higher fares**, showing a wide variance compared to other classes.
 
-Fare vs Passenger Class
+7. **Correlation Heatmap:**
+   - Strong correlation between:
+     - **Pclass and Fare** (negative): Higher class, higher fare.
+     - **Sex and Survived** (negative): Female passengers (encoded lower) had higher survival odds.
+   - Other features showed weak or no strong linear correlation with survival.
 
-Correlation heatmap after encoding categorical features
+---
 
-Encoding
+## 🖼️ Sample Visualizations
+   survival_count.png
+   passenger_class_count.png
+   age_distribution.png
+   survived_by_sex.png
+   age_vs_survival.png
+   fare_vs_class.png
+   correlation_heatmap.png
 
-Categorical features like Sex, Embarked were encoded using LabelEncoder for heatmap analysis
+---
 
-Data Visualization
+## 🛠️ Tools Used
 
-Countplots, Boxplots, Histograms, and Heatmaps using Seaborn and Matplotlib
+- Python
+- Jupyter Notebook
+- Pandas
+- Seaborn
+- Matplotlib
 
-📸 Plots
-All plots are saved in the plots/ folder:
+---
 
-survival_count.png
+## 📁 How to Run
 
-passenger_class_count.png
+1. Clone this repo
+2. Open `EDA.ipynb` in Jupyter
+3. Run all cells and view visualizations
 
-age_distribution.png
-
-survived_by_sex.png
-
-age_vs_survival.png
-
-fare_vs_class.png
-
-correlation_heatmap.png
-
-🧰 Tools Used
-Python
-
-Jupyter Notebook
-
-Pandas
-
-NumPy
-
-Seaborn
-
-Matplotlib
-
-LabelEncoder (sklearn)
-
-🔗 Follow My Data Science Journey at **[MgTechInsights](https://mgtechinsights.framer.website)**  
+---
+##🔗 Follow My Data Science Journey at **[MgTechInsights](https://mgtechinsights.framer.website)**  
